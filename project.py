@@ -9,7 +9,14 @@ def display_text_with_gaps(quiz_text):
     formatted_text = " ".join(quiz_text)
     print("Текст с пропусками:")
     print(formatted_text)
-
+def clean_tokens (formatted_text):
+    answers = []
+    for i in range(len(cleaned_tokens)):
+        if (i+1) == 10:
+            answers += i
+            cleaned_tokens[i] = "___"
+            task = " ".join(cleaned_tokens)
+    return task, answers
 def get_answers(num_gaps):
     answers = []
     for i in range(num_gaps):
