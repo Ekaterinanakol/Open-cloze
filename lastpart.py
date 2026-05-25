@@ -5,8 +5,3 @@ def calculate_correct_answers(user_answers, correct_answers):
             result+=1
     return result
 
-a = ['a', 'd', 'c']
-b = ['a', 'b', 'd']
-
-print(calculate_correct_answers(a,b))
-
